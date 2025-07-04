@@ -1,4 +1,4 @@
-namespace FawryTask.Models
+namespace FawryTask.Models.Customers
 {
 
     public class Customer : ICustomer

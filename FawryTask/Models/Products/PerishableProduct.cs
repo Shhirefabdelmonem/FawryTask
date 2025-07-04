@@ -1,4 +1,4 @@
-namespace FawryTask.Models
+namespace FawryTask.Models.Products
 {
     public class PerishableProduct : Product, IPerishable
     {
@@ -20,4 +20,4 @@ namespace FawryTask.Models
             return base.IsAvailable() && !IsExpired();
         }
     }
-} 
+}

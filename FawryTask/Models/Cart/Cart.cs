@@ -1,4 +1,6 @@
-namespace FawryTask.Models
+using FawryTask.Models.Products;
+
+namespace FawryTask.Models.Cart
 {
 
     public class Cart : ICart

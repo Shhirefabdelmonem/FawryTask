@@ -1,4 +1,4 @@
-namespace FawryTask.Models
+namespace FawryTask.Models.Products
 {
     public interface IShippable
     {
@@ -6,4 +6,4 @@ namespace FawryTask.Models
         string GetName();
         double GetWeight();
     }
-} 
+}

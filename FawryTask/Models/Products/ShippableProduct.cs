@@ -1,4 +1,4 @@
-namespace FawryTask.Models
+namespace FawryTask.Models.Products
 {
 
     public class ShippableProduct : Product, IShippable
@@ -10,7 +10,7 @@ namespace FawryTask.Models
         {
             if (weight <= 0)
                 throw new ArgumentException("Weight must be positive", nameof(weight));
-            
+
             Weight = weight;
         }
 
@@ -24,4 +24,4 @@ namespace FawryTask.Models
             return Weight;
         }
     }
-} 
+}

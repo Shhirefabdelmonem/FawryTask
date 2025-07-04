@@ -1,6 +1,11 @@
-using FawryTask.Models;
+using FawryTask.Models.Products;
+using FawryTask.Models.Customers;
+using FawryTask.Models.Cart;
+using FawryTask.Models.Checkout;
+using FawryTask.Services.Pricing;
+using FawryTask.Services.Shipping;
 
-namespace FawryTask.Services
+namespace FawryTask.Services.Checkout
 {
 
     public class CheckoutService : ICheckoutService
@@ -44,7 +49,7 @@ namespace FawryTask.Services
 
             var shippableItems = new List<IShippable>();
             var shippableQuantities = new List<int>();
-            
+
             foreach (var item in cart.Items)
             {
                 if (item.Product is IShippable shippable)
@@ -78,16 +83,16 @@ namespace FawryTask.Services
         private void DisplayCheckoutReceipt(IReadOnlyList<CartItem> items, decimal subtotal, decimal shippingFees, decimal totalAmount)
         {
             Console.WriteLine("** Checkout receipt **");
-            
+
             foreach (var item in items)
             {
                 Console.WriteLine($"{item.Quantity}x {item.Product.Name}        {item.TotalPrice}");
             }
-            
+
             Console.WriteLine("----------------------");
             Console.WriteLine($"Subtotal         {subtotal}");
             Console.WriteLine($"Shipping         {shippingFees}");
             Console.WriteLine($"Amount           {totalAmount}");
         }
     }
-} 
+}

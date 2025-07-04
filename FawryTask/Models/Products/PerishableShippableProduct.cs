@@ -1,4 +1,4 @@
-namespace FawryTask.Models
+namespace FawryTask.Models.Products
 {
 
     public class PerishableShippableProduct : Product, IPerishable, IShippable
@@ -36,4 +36,4 @@ namespace FawryTask.Models
             return Weight;
         }
     }
-} 
+}

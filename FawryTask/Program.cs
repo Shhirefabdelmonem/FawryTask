@@ -1,5 +1,10 @@
-﻿using FawryTask.Models;
-using FawryTask.Services;
+﻿using FawryTask.Models.Products;
+using FawryTask.Models.Customers;
+using FawryTask.Models.Cart;
+using FawryTask.Models.Checkout;
+using FawryTask.Services.Checkout;
+using FawryTask.Services.Pricing;
+using FawryTask.Services.Shipping;
 
 namespace FawryTask
 {
@@ -95,7 +100,7 @@ namespace FawryTask
                 Console.WriteLine($"Error adding to cart: {ex.Message}");
             }
 
-            
+
         }
     }
 }

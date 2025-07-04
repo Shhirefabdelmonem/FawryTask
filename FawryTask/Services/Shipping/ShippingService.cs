@@ -1,6 +1,6 @@
-using FawryTask.Models;
+using FawryTask.Models.Products;
 
-namespace FawryTask.Services
+namespace FawryTask.Services.Shipping
 {
 
     public class ShippingService : IShippingService

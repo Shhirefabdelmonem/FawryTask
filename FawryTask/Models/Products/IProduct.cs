@@ -1,4 +1,4 @@
-namespace FawryTask.Models
+namespace FawryTask.Models.Products
 {
     public interface IProduct
     {

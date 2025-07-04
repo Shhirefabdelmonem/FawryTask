@@ -1,6 +1,6 @@
-using FawryTask.Models;
+using FawryTask.Models.Products;
 
-namespace FawryTask.Services
+namespace FawryTask.Services.Pricing
 {
 
     public class PricingService : IPricingService
@@ -28,4 +28,4 @@ namespace FawryTask.Services
             return weightInKg * ShippingRatePerKg;
         }
     }
-} 
+}
